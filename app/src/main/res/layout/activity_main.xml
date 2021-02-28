@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+    <Button
+            android:text="Don't push me!"
+            android:layout_width="283dp"
+            android:layout_height="80dp" android:id="@+id/bigButton"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            android:textSize="30sp" android:fontFamily="sans-serif-condensed-medium"
+            android:background="@drawable/rounded_corners"
+            app:layout_constraintVertical_bias="0.407"/>
+    <TextView
+            android:text="Really, you don't want to do it"
+            android:layout_width="370dp"
+            android:layout_height="58dp" android:id="@+id/textView4"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bigButton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@android:drawable/divider_horizontal_textfield" app:autoSizeTextType="uniform"
+            android:shadowColor="#020000"
+            android:shadowDx="50" android:shadowDy="50" android:shadowRadius="100" android:fontFamily="cursive"
+            android:textColor="#000000" app:layout_constraintVertical_bias="0.23"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textCount"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:textSize="50sp" android:text="0"
+            app:layout_constraintBottom_toTopOf="@+id/bigButton" app:layout_constraintTop_toTopOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
